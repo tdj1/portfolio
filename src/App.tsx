@@ -7,14 +7,11 @@ function App() {
   return (
     <>
       <h1>Thomas Davies-Jones</h1>
-      <h1>Portfolio</h1>
+      <h2>Portfolio</h2>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
       </div>
     </>
   )
