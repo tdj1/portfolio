@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import './App.css'
+import { Button } from "rsuite";
+
+import "rsuite/dist/rsuite.min.css";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,11 +11,7 @@ function App() {
     <>
       <h1>Thomas Davies-Jones</h1>
       <h2>Portfolio</h2>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      <Button appearance="primary">Hello World</Button>
     </>
   )
 }
