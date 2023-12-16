@@ -21,8 +21,8 @@ function App() {
       minWidth: 200.00,
       scale: 1.00,
       scaleMobile: 1.00,
-      spacing: 0.1,
-      chaos: 3.5,
+      spacing: -9,
+      chaos: -5,
       color: 0xF9A03F
     })
   }, [])
