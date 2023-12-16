@@ -39,7 +39,7 @@ function App() {
             </div>
             <div className="about-me">
               <div className={aboutMeVisible ? "about-me-on-screen" : "about-me-off-screen"}>
-                <p>Hi there, I build fun things! I'm a current penultimate student in <br></br>St. Andrews studying Computer Science!</p>
+                <p>Hi there, I build fun things! I'm a current penultimate student in St. Andrews <br></br>University studying Computer Science! Outside of work, I'm an avid <br></br>volleyball player and an amateur boulderer.</p>
               </div>
             </div>
             <div className="buttons">
