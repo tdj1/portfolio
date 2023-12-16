@@ -1,5 +1,5 @@
 import './App.css'
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import CustomButtons from './components/CustomButtons';
 import offToOnScreen from './transition/offToOnScreen';
 // @ts-ignore
