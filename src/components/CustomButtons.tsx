@@ -7,12 +7,12 @@ import { useNavigate } from "react-router-dom"
 const CustomButtons: React.FC = () => {
     const navigate = useNavigate();
 
-    const [button1Visible] = offToOnScreen(3500);
-    const [button2Visible] = offToOnScreen(3700);
-    const [button3Visible] = offToOnScreen(3900);
-    const [button4Visible] = offToOnScreen(4100);
-    const [button5Visible] = offToOnScreen(4300);
-    const [button6Visible] = offToOnScreen(4500);
+    const [button1Visible] = offToOnScreen(800);
+    const [button2Visible] = offToOnScreen(1000);
+    const [button3Visible] = offToOnScreen(1200);
+    const [button4Visible] = offToOnScreen(1400);
+    const [button5Visible] = offToOnScreen(1600);
+    const [button6Visible] = offToOnScreen(1800);
 
     return (
         <div className="button">
