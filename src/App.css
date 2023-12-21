@@ -1,163 +1,147 @@
+* {
+  font-family: 'Comfortaa', sans-serif; 
+  box-sizing: border-box;
+}
 
 .bg {
+  position: absolute;
+  top: 0%;
+  left: 0%;
   width: 100vw;
   height: 100vh;
 }
 
-.container{
-  font-family: 'Comfortaa', sans-serif; 
-  font-size: 50px; 
-  text-align: left;
-  max-width: 1000px;
-  padding: 400px 10px;
+.general-object-on-screen {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 1s ease 0s;
+}
+
+/************************************************************************************/
+/*Name*/
+/************************************************************************************/
+
+.name {
+  position: fixed;
+  top: 40%;
+  left: 1%;
+  font-size: 50px;
 }
 
 .name-off-screen {
   transform: translateX(-600px);
 }
 
-.name-on-screen {
-  opacity: 1;
-  transform: translateX(0);
-  transition: transform 1s ease 0s;
+/************************************************************************************/
+/*About me*/
+/************************************************************************************/
+
+.about-me {
+  position: fixed;
+  top: 50%;
+  left: 1%;
+  font-size: 16px; 
+  max-width: 1000px;
 }
 
 .about-me-off-screen {
   transform: translateX(-700px);
 }
 
-.about-me-on-screen {
-  opacity: 1;
-  transform: translateX(0);
-  transition: transform 1s ease 0s;
-}
-
-.about-me {
-  font-family: 'Comfortaa', sans-serif; 
-  font-size: 16px; 
-  text-align: left;
-  max-width: 1000px;
-  padding: 10px 10px;
-}
-
-.button1-off-screen.rs-btn {
-  transform: translateX(-700px);
-}
-
-.button1-on-screen.rs-btn {
-  font-family: 'Comfortaa', sans-serif; 
-  font-size: 20px;  
-  opacity: 1;
-  transform: translateX(0);
-  transition: transform 1s ease 0s;
-}
-
-.button2-off-screen.rs-btn {
-  transform: translateX(-700px);
-}
-
-.button2-on-screen.rs-btn {
-  font-family: 'Comfortaa', sans-serif; 
-  font-size: 20px;  
-  opacity: 1;
-  transform: translateX(0);
-  transition: transform 1s ease 0s;
-}
-
-.button3-off-screen.rs-btn {
-  transform: translateX(-700px);
-}
-
-.button3-on-screen.rs-btn {
-  font-family: 'Comfortaa', sans-serif; 
-  font-size: 20px;  
-  opacity: 1;
-  transform: translateX(0);
-  transition: transform 1s ease 0s;
-}
-
-.button4-off-screen.rs-btn {
-  transform: translateX(-700px);
-}
-
-.button4-on-screen.rs-btn {
-  font-family: 'Comfortaa', sans-serif; 
-  font-size: 20px;  
-  opacity: 1;
-  transform: translateX(0);
-  transition: transform 1s ease 0s;
-}
-
-.button5-off-screen.rs-btn {
-  transform: translateX(-700px);
-}
-
-.button5-on-screen.rs-btn {
-  font-family: 'Comfortaa', sans-serif; 
-  font-size: 20px;  
-  opacity: 1;
-  transform: translateX(0);
-  transition: transform 1s ease 0s;
-}
-
-.button6-off-screen.rs-btn {
-  transform: translateX(-700px);
-}
-
-.button6-on-screen.rs-btn {
-  font-family: 'Comfortaa', sans-serif; 
-  font-size: 20px;  
-  opacity: 1;
-  transform: translateX(0);
-  transition: transform 1s ease 0s;
-}
-
+/************************************************************************************/
+/*Buttons and their transitions*/
+/************************************************************************************/
 .buttons {
-  text-align: left; 
-  max-width: 1000px;
-  padding: 50px 0px;
+  position: fixed;
+  top: 60%;
+  left: 0.5%;
 }
 
-.button1-on-screen.rs-btn:hover {
-  transform: translateX(50px);
+.button-gap {
+  padding: 10px 0px;
 }
-.button2-on-screen.rs-btn:hover {
-  transform: translateX(50px);
+
+.button1-off-screen.rs-btn, .button2-off-screen.rs-btn, .button3-off-screen.rs-btn, .button4-off-screen.rs-btn, .button5-off-screen.rs-btn, .button6-off-screen.rs-btn {
+  transform: translateX(-700px);
 }
-.button3-on-screen.rs-btn:hover {
-  transform: translateX(50px);
+
+.button1-on-screen.rs-btn, .button2-on-screen.rs-btn, .button3-on-screen.rs-btn, .button4-on-screen.rs-btn, .button5-on-screen.rs-btn, .button6-on-screen.rs-btn {
+  font-size: 20px;  
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 1s ease 0s;
 }
-.button4-on-screen.rs-btn:hover {
-  transform: translateX(50px);
-}
-.button5-on-screen.rs-btn:hover {
-  transform: translateX(50px);
-}
-.button6-on-screen.rs-btn:hover {
+
+.button1-on-screen.rs-btn:hover, .button2-on-screen.rs-btn:hover, .button3-on-screen.rs-btn:hover, .button4-on-screen.rs-btn:hover, .button5-on-screen.rs-btn:hover, .button6-on-screen.rs-btn:hover {
   transform: translateX(50px);
 }
 
+/************************************************************************************/
+/*Project titles and their transitions*/
+/************************************************************************************/
 
-.project-1-title{
-  font-family: 'Comfortaa', sans-serif; 
+.project-title{
   font-size: 50px; 
-  text-align: left;
-  padding: 50px 470px;
+}
+
+.project-title .project-1-title{
+  position: fixed;
+  top: 10%;
+  left: 25%;
   color: blueviolet;
 }
 
-.project-1-off-screen {
+.project-title .project-2-title{
+  position: fixed;
+  top: 10%;
+  left: 22%;
+  color: crimson;
+}
+
+.project-title .project-3-title{
+  position: fixed;
+  top: 10%;
+  left: 15%;
+  color: darkcyan;
+}
+
+.project-title .project-4-title{
+  position: fixed;
+  top: 10%;
+  left: 17%;
+  color: green;
+}
+
+.project-title .project-5-title{
+  position: fixed;
+  top: 10%;
+  left: 32%;
+  color: darkslategray;
+}
+
+.project-title .project-6-title{
+  position: fixed;
+  top: 10%;
+  left: 8%;
+  color: yellow;
+}
+
+.project-1-off-screen, .project-2-off-screen, .project-3-off-screen, .project-4-off-screen, .project-5-off-screen, .project-6-off-screen {
   transform: translateY(-600px);
 }
 
-.project-1-on-screen {
+.project-1-on-screen, .project-2-on-screen, .project-3-on-screen, .project-4-on-screen, .project-5-on-screen, .project-6-on-screen {
   opacity: 1;
   transform: translateY(50);
   transition: transform 1s ease-out 0s;
 }
 
-.back-button {
-  padding: 10px 10px
+/************************************************************************************/
+/*Top bar buttons in projects*/
+/************************************************************************************/
+
+.buttons-in-project {
+  display: inline-flex;
 }
   
 .back-button-off-screen.rs-btn {
@@ -165,9 +149,307 @@
 }
 
 .back-button-on-screen.rs-btn {
-  font-family: 'Comfortaa', sans-serif; 
+  position: fixed;
+  top: 1%;
+  left: 1%;
   font-size: 20px;  
   opacity: 1;
   transform: translateX(0);
   transition: transform 1s ease 0s;
+}
+
+.next-button-off-screen.rs-btn {
+  transform: translateX(700px);
+}
+
+.next-button-on-screen.rs-btn {
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  font-size: 20px;  
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 1s ease 0s;
+}
+  
+.restart-button-off-screen.rs-btn {
+  transform: translateX(700px);
+}
+
+.restart-button-on-screen.rs-btn {
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  font-size: 20px;  
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 1s ease 0s;
+}
+
+/************************************************************************************/
+/*Paragraphs*/
+/************************************************************************************/
+
+.project-1-paragraph-1{
+  position: fixed;
+  top: 20%;
+  left: 1%;
+  font-size: 20px; 
+  max-width: 700px;
+  color: white;
+}
+
+.project-1-paragraph-1-off-screen {
+  transform: translateX(-800px);
+}
+
+.project-1-paragraph-1-on-screen {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 1s ease-out 0s;
+}
+
+.project-1-paragraph-2{
+  position: fixed;
+  top: 55%;
+  right: 1%;
+  font-size: 20px; 
+  max-width: 600px;
+  color: white;
+}
+
+.project-1-paragraph-2-off-screen {
+  transform: translateX(800px);
+}
+
+.project-1-paragraph-2-on-screen {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 1s ease-out 0s;
+}
+
+.project-2-paragraph-1{
+  position: fixed;
+  top: 20%;
+  left: 1%;
+  font-size: 20px; 
+  max-width: 700px;
+  color: white;
+}
+
+.project-2-paragraph-1-off-screen {
+  transform: translateX(-800px);
+}
+
+.project-2-paragraph-1-on-screen {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 1s ease-out 0s;
+}
+
+.project-2-paragraph-2{
+  position: fixed;
+  top: 53%;
+  right: 1%;
+  font-size: 20px; 
+  max-width: 600px;
+  color: white;
+}
+
+.project-2-paragraph-2-off-screen {
+  transform: translateX(800px);
+}
+
+.project-2-paragraph-2-on-screen {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 1s ease-out 0s;
+}
+
+.project-4-paragraph-1{
+  position: fixed;
+  top: 30%;
+  left: 1%;
+  font-size: 20px; 
+  max-width: 650px;
+  color: white;
+}
+
+.project-4-paragraph-1-off-screen {
+  transform: translateX(-800px);
+}
+
+.project-4-paragraph-1-on-screen {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 1s ease-out 0s;
+}
+
+.project-4-paragraph-2{
+  position: fixed;
+  top: 55%;
+  right: 1%;
+  font-size: 20px; 
+  max-width: 600px;
+  color: white;
+}
+
+.project-4-paragraph-2-off-screen {
+  transform: translateX(800px);
+}
+
+.project-4-paragraph-2-on-screen {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 1s ease-out 0s;
+}
+
+.project-5-paragraph-1{
+  position: fixed;
+  top: 30%;
+  left: 1%;
+  font-size: 20px; 
+  max-width: 650px;
+  color: white;
+}
+
+.project-5-paragraph-1-off-screen {
+  transform: translateX(-800px);
+}
+
+.project-5-paragraph-1-on-screen {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 1s ease-out 0s;
+}
+
+.project-5-paragraph-2{
+  position: fixed;
+  top: 30%;
+  right: 1%;
+  font-size: 20px; 
+  max-width: 600px;
+  color: white;
+}
+
+.project-5-paragraph-2-off-screen {
+  transform: translateX(800px);
+}
+
+.project-5-paragraph-2-on-screen {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 1s ease-out 0s;
+}
+
+.project-5-paragraph-3{
+  position: fixed;
+  top: 55%;
+  right: 1%;
+  font-size: 20px; 
+  max-width: 600px;
+  color: white;
+}
+
+.project-5-paragraph-3-off-screen {
+  transform: translateX(800px);
+}
+
+.project-5-paragraph-3-on-screen {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 1s ease-out 0s;
+}
+
+/************************************************************************************/
+/*Images*/
+/************************************************************************************/
+.project-1-image-1 {
+  border-radius: 25px;
+  position: fixed;
+  top: 120%;
+  left: 1%;
+  width: 600px;
+  height: 400px;
+  border: 10px solid #8A2BE2;
+}
+
+.project-1-image-2 {
+  border-radius: 25px;
+  position: fixed;
+  top: -250%;
+  right: 10%;
+  width: 500px;
+  height: 333px;
+  border: 10px solid #8A2BE2;
+}
+
+.project-1-image-3 {
+  border-radius: 25px;
+  position: fixed;
+  top: 130%;
+  right: 40%;
+  width: 532px;
+  height: 273px;
+  border: 10px solid #8A2BE2;
+}
+
+.project-2-image-1 {
+  border-radius: 25px;
+  position: fixed;
+  top: 100%;
+  left: 1%;
+  width: 600px;
+  height: 550px;
+  border: 10px solid #DC143C;
+}
+
+.project-2-image-2 {
+  border-radius: 25px;
+  position: fixed;
+  top: -150%;
+  right: 10%;
+  width: 500px;
+  height: 333px;
+  border: 10px solid #DC143C;
+}
+
+.project-2-image-3 {
+  border-radius: 25px;
+  position: fixed;
+  top: 105%;
+  right: 40%;
+  width: 532px;
+  height: 273px;
+  border: 10px solid #DC143C;
+}
+
+.project-4-image-1 {
+  border-radius: 25px;
+  position: fixed;
+  top: 190%;
+  left: 70%;
+  width: 750px;
+  height: 250px;
+  border: 10px solid #00ee00;
+}
+
+.project-4-image-2 {
+  border-radius: 25px;
+  position: fixed;
+  top: 0%;
+  right: 240%;
+  width: 400px;
+  height: 300px;
+  border: 10px solid #00ee00;
+}
+
+.project-4-image-3 {
+  border-radius: 25px;
+  position: fixed;
+  top: -120%;
+  right: 10%;
+  width: 500px;
+  height: 350px;
+  border: 10px solid #00ee00;
 }

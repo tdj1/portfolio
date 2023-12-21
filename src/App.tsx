@@ -1,5 +1,5 @@
 import './App.css'
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import CustomButtons from './components/CustomButtons';
 import offToOnScreen from './transition/offToOnScreen';
 // @ts-ignore
@@ -10,9 +10,10 @@ import "rsuite/dist/rsuite.min.css";
 function App() {
   const [nameVisible] = offToOnScreen(200);
   const [aboutMeVisible] = offToOnScreen(400);
+  const vantaRef = useRef<any>(null);
 
   useEffect(() => {
-    TRUNK({
+    vantaRef.current = TRUNK({
       el: "#vanta",
       mouseControls: true,
       touchControls: true,
@@ -24,27 +25,30 @@ function App() {
       spacing: -9,
       chaos: -5,
       color: 0xF9A03F
-    })
-  }, [])
+    });
 
+    // Clean up function
+    return () => {
+      if (vantaRef.current) {
+        (vantaRef.current as any).destroy();
+      }
+    };
+  }, []);
   return (
     <div className="app">
       <div className="bg" id="vanta">
-        <div className="container">
-          <div className="name">
-            <div className={nameVisible ? "name-on-screen" : "name-off-screen"}>
-              <p>Thomas Davies-Jones</p>
-            </div>
-          </div>  
-          <div className="about-me">
-            <div className={aboutMeVisible ? "about-me-on-screen" : "about-me-off-screen"}>
-              <p>Hi there, I build fun things! I'm a current penultimate student in St. Andrews <br></br>University studying Computer Science! Outside of work, I'm an avid <br></br>volleyball player and an amateur boulderer.</p>
-            </div>
-          </div>
-          <div className="buttons">
-            <CustomButtons />
+        <div className="name-gap"></div>
+        <div className="name">
+          <div className={nameVisible ? "general-object-on-screen" : "name-off-screen"}>
+            <p>Thomas Davies-Jones</p>
           </div>
         </div>
+        <div className="about-me">
+          <div className={aboutMeVisible ? "general-object-on-screen" : "about-me-off-screen"}>
+            <p>Hi there, I build fun things! I'm a current penultimate student in St. Andrews <br></br>University studying Computer Science! Outside of work, I'm an avid <br></br>volleyball player and an amateur boulderer.</p>
+          </div>
+        </div>
+          <CustomButtons />
       </div>
     </div>
   )
