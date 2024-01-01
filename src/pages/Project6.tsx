@@ -52,7 +52,7 @@ function Project6() {
         <div className="project-title">
           <div className="project-6-title">
             <div className={titleVisible ? "project-6-on-screen" : "project-6-off-screen"}>
-              <p>Project 6: Depth first search algorithm for Late Binding Solitare</p>
+              <p>Project 5: Depth first search algorithm for Late Binding Solitare</p>
             </div>
           </div>
         </div>

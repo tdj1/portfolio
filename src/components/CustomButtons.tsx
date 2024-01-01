@@ -21,17 +21,17 @@ const CustomButtons: React.FC = () => {
             <div className="button-gap"></div>
             <Button className={button2Visible ? "button2-on-screen" : "button2-off-screen"} color="orange" appearance="subtle" onClick={() => navigate("/portfolio/project2")}>Project 2: Sudoku & minesweeper website</Button>
             <br></br>
-            <div className="button-gap"></div>
+            {/* <div className="button-gap"></div>
             <Button className={button3Visible ? "button3-on-screen" : "button3-off-screen"} color="orange" appearance="subtle" onClick={() => navigate("/portfolio/project3")}>Project 3: Svelte website with SQL database querying</Button>
+            <br></br> */}
+            <div className="button-gap"></div>
+            <Button className={button4Visible ? "button4-on-screen" : "button4-off-screen"} color="orange" appearance="subtle" onClick={() => navigate("/portfolio/project4")}>Project 3: Anonymous and secure messaging app</Button>
             <br></br>
             <div className="button-gap"></div>
-            <Button className={button4Visible ? "button4-on-screen" : "button4-off-screen"} color="orange" appearance="subtle" onClick={() => navigate("/portfolio/project4")}>Project 4: Anonymous and secure messaging app</Button>
+            <Button className={button5Visible ? "button5-on-screen" : "button5-off-screen"} color="orange" appearance="subtle" onClick={() => navigate("/portfolio/project5")}>Project 4: Game prototypes</Button>
             <br></br>
             <div className="button-gap"></div>
-            <Button className={button5Visible ? "button5-on-screen" : "button5-off-screen"} color="orange" appearance="subtle" onClick={() => navigate("/portfolio/project5")}>Project 5: Game prototypes</Button>
-            <br></br>
-            <div className="button-gap"></div>
-            <Button className={button6Visible ? "button6-on-screen" : "button6-off-screen"} color="orange" appearance="subtle" onClick={() => navigate("/portfolio/project6")}>Project 6: Depth first search algorithm for Late Binding Solitare</Button>
+            <Button className={button6Visible ? "button6-on-screen" : "button6-off-screen"} color="orange" appearance="subtle" onClick={() => navigate("/portfolio/project6")}>Project 5: Depth first search algorithm for Late Binding Solitare</Button>
         </div>
     );
 };

@@ -47,7 +47,7 @@ function Project2() {
             <Button className={titleVisible ? "back-button-on-screen" : "back-button-off-screen"} appearance="subtle" onClick={() => navigate("/portfolio/")}>Back to homepage</Button>
           </div>
           <div className="next-button">
-            <Button className={titleVisible ? "next-button-on-screen" : "next-button-off-screen"} appearance="subtle" onClick={() => navigate("/portfolio/project3")}>Next project</Button>
+            <Button className={titleVisible ? "next-button-on-screen" : "next-button-off-screen"} appearance="subtle" onClick={() => navigate("/portfolio/project4")}>Next project</Button>
           </div>
         </div>
         <div className="project-title">

@@ -54,7 +54,7 @@ function Project5() {
         <div className="project-title">
         <div className="project-5-title">
           <div className={titleVisible ? "project-5-on-screen" : "project-5-off-screen"}>
-            <p>Project 5: Game prototypes</p>
+            <p>Project 4: Game prototypes</p>
           </div>
         </div>
         <div className="project-5-paragraph-1">
