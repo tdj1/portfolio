@@ -18,12 +18,12 @@ ReactDOM.createRoot(rootElement!).render(
     <Router>
       <Routes>
         <Route path="/portfolio/" element={<App />} />
-        <Route path="/portfolio/project1" element={<Project1 />} />
-        <Route path="/portfolio/project2" element={<Project2 />} />
-        <Route path="/portfolio/project3" element={<Project3 />} />
-        <Route path="/portfolio/project4" element={<Project4 />} />
-        <Route path="/portfolio/project5" element={<Project5 />} />
-        <Route path="/portfolio/project6" element={<Project6 />} />
+        <Route path="/portfolio/project1/" element={<Project1 />} />
+        <Route path="/portfolio/project2/" element={<Project2 />} />
+        <Route path="/portfolio/project3/" element={<Project3 />} />
+        <Route path="/portfolio/project4/" element={<Project4 />} />
+        <Route path="/portfolio/project5/" element={<Project5 />} />
+        <Route path="/portfolio/project6/" element={<Project6 />} />
       </Routes>
     </Router>
   </React.StrictMode>,
