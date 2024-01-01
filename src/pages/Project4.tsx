@@ -59,12 +59,12 @@ function Project4() {
             <div className={titleVisible ? "project-4-paragraph-1-on-screen" : "project-4-paragraph-1-off-screen"}>
               <p>This project was a completely anonymous, private and secure discussion app. The language used to achieve this was Java, it uses many security protocols and technologies. The architecture is client to server, where the server stores all messages between users on volatile memory but it uses a zero knowledge format where all of this data is encrypted and cannot be read by the server, this is done by using SSL over TLS, certificates, public/private RSA keys and message signatures.</p>
               <img src={projectImage1} className="project-4-image-1" />
+              <img src={projectImage2} className="project-4-image-2" />
             </div>
           </div>
           <div className="project-4-paragraph-2">
             <div className={titleVisible ? "project-4-paragraph-2-on-screen" : "project-4-paragraph-2-off-screen"}>
               <p>I went about this project with the zero-trust architecture in mind and have defenses to protect against impersonation attacks by checking the digital signature by decrypting the public key linked to each message and using this and the plaintext of the message to generate a signature to compare against the plaintext of the decrypted signature from the message. To prevent replay attacks, I encrypt the system time within the message and if the same message comes through with the same system time then we know it's extremely likely to be a replay.</p>
-              <img src={projectImage2} className="project-4-image-2" />
               <img src={projectImage3} className="project-4-image-3" />
             </div>
           </div>
