@@ -49,6 +49,10 @@
   max-width: 1000px;
 }
 
+.linkedin {
+  color:dimgray;
+}
+
 .about-me-off-screen {
   transform: translateX(-150%);
 }
@@ -58,7 +62,7 @@
 /************************************************************************************/
 .buttons {
   position: fixed;
-  top: 60%;
+  top: 70%;
   left: 0.5%;
 }
 

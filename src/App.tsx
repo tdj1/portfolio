@@ -45,7 +45,7 @@ function App() {
         </div>
         <div className="about-me">
           <div className={aboutMeVisible ? "general-object-on-screen" : "about-me-off-screen"}>
-            <p>Hi there, I build fun things! I'm a current penultimate student in St. Andrews <br></br>University studying Computer Science! Outside of work, I'm an avid <br></br>volleyball player and an amateur boulderer.</p>
+            <p>Hi there, I build fun things! I'm a current penultimate student in St. Andrews <br></br>University studying Computer Science! Outside of work, I'm an avid <br></br>volleyball player and an amateur boulderer.<br></br><br></br>Email: thomasdaviesjones@gmail.com<br></br></p><a className="linkedin" href="https://www.linkedin.com/in/thomas-davies-jones-4a91ba1b5/">LinkedIn</a><br></br>
           </div>
         </div>
           <CustomButtons />
