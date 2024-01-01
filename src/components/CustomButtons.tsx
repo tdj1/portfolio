@@ -9,7 +9,7 @@ const CustomButtons: React.FC = () => {
 
     const [button1Visible] = offToOnScreen(800);
     const [button2Visible] = offToOnScreen(1000);
-    const [button3Visible] = offToOnScreen(1200);
+    // const [button3Visible] = offToOnScreen(1200);
     const [button4Visible] = offToOnScreen(1400);
     const [button5Visible] = offToOnScreen(1600);
     const [button6Visible] = offToOnScreen(1800);
