@@ -24,10 +24,58 @@ a:hover {
 
 body {
   margin: 0;
+  padding: 0;
+  width: 100vw; /* Full window width */
+  height: 100vh; /* Full window height */
+  overflow: hidden; /* Prevent scrolling */
   display: flex;
-  place-items: center;
-  min-width: 1280px; 
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #181818; /* Background color */
+}
+
+.container {
+  position: absolute;
+  width: 1920px; /* Fixed width */
+  height: 1080px; /* Fixed height */
+  overflow: hidden; /* Prevent content from resizing */
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px; /* Match container width */
+  height: 1080px; /* Match container height */
+  z-index: 1;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 1920px; /* Match container width */
+  height: 1080px; /* Match container height */
+  padding: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.name {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.about-me {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.projects {
+  font-size: 1rem;
 }
 
 

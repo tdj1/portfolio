@@ -8,7 +8,7 @@ import Project2 from './pages/Project2.tsx';
 import Project3 from './pages/Project3.tsx';
 import Project4 from './pages/Project4.tsx';
 import Project5 from './pages/Project5.tsx';
-import Project6 from './pages/Project6.tsx';
+import References from './pages/References.tsx';
 import './index.css';
 
 const rootElement = document.getElementById('root');
@@ -23,7 +23,7 @@ ReactDOM.createRoot(rootElement!).render(
         <Route path="/portfolio/project3/" element={<Project3 />} />
         <Route path="/portfolio/project4/" element={<Project4 />} />
         <Route path="/portfolio/project5/" element={<Project5 />} />
-        <Route path="/portfolio/project6/" element={<Project6 />} />
+        <Route path="/portfolio/references/" element={<References />} />
       </Routes>
     </Router>
   </React.StrictMode>,

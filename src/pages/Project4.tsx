@@ -52,7 +52,7 @@ function Project4() {
         <div className="project-title">
           <div className="project-4-title">
             <div className={titleVisible ? "project-4-on-screen" : "project-4-off-screen"}>
-              <p>Project 3: Anonymous and secure messaging app</p>
+              <p>Project 4: Anonymous and secure messaging app</p>
             </div>
           </div>
           <div className="project-4-paragraph-1">

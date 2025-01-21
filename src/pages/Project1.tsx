@@ -54,19 +54,19 @@ function Project1() {
         <div className="project-title">
           <div className="project-1-title">
             <div className={titleVisible ? "project-1-on-screen" : "project-1-off-screen"}>
-              <p>Project 1: The Ender Essence Chapter</p>
+              <p>Project 1: Educational Video Game Masters Project</p>
             </div>
           </div>
         </div>
         <div className="project-1-paragraph-1">
           <div className={titleVisible ? "project-1-paragraph-1-on-screen" : "project-1-paragraph-1-off-screen"}>
-            <p>This project was a fully developed Minecraft mod to improve mental fitness in the user witout them realising this was the goal. I worked with a specialised team to design this mod, to brainstorm ideas that we're feasible with the Minecraft libraries available and to translate psychological techniques into the virtual world. This was completed in Java with the Minecraft Forge Libraries and it had many interconnected aspects which transformed the game into something entirely new.</p>
+            <p></p>
             <img src={projectImage1} className="project-1-image-1" />
           </div>
         </div>
         <div className="project-1-paragraph-2">
           <div className={titleVisible ? "project-1-paragraph-2-on-screen" : "project-1-paragraph-2-off-screen"}>
-            <p>Some of the mod's features were new quests, new tools, new mechanics, new animals and AOE statues with user interfaces. We had a successful beta test which allowed us to see that user's could not tell what the mod's goal was while introducing these psychological principles.</p>
+            <p></p>
             <img src={projectImage2} className="project-1-image-2" />
             <img src={projectImage3} className="project-1-image-3" />
           </div>

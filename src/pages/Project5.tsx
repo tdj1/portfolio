@@ -48,13 +48,13 @@ function Project5() {
             <Button className={titleVisible ? "back-button-on-screen" : "back-button-off-screen"} appearance="subtle" onClick={() => navigate("/portfolio/")}>Back to homepage</Button>
           </div>
           <div className="next-button">
-            <Button className={titleVisible ? "next-button-on-screen" : "next-button-off-screen"} appearance="subtle" onClick={() => navigate("/portfolio/project6")}>Next project</Button>
+            <Button className={titleVisible ? "next-button-on-screen" : "next-button-off-screen"} appearance="subtle" onClick={() => navigate("/portfolio/references")}>Next project</Button>
           </div>
         </div>
         <div className="project-title">
         <div className="project-5-title">
           <div className={titleVisible ? "project-5-on-screen" : "project-5-off-screen"}>
-            <p>Project 4: Game prototypes</p>
+            <p>Project 5: Game prototypes</p>
           </div>
         </div>
         <div className="project-5-paragraph-1">
@@ -65,13 +65,13 @@ function Project5() {
           </div>
           <div className="project-5-paragraph-2">
             <div className={titleVisible ? "project-5-paragraph-2-on-screen" : "project-5-paragraph-2-off-screen"}>
-              <p>This created with Unity(C#) and it was a proof of concept game where the player would use a sword controlled by a mouse (or touch screen) to fend off waves of enemies. </p>
+              <p>This was a game based of Robotron: 2084, a classic arcade shoot 'em up, it utilises procedural generation through usage of digging, room and cellular automata algorithms. There's AI pathfinding through A* search for the enemies within the game with LOS through bresenhams line generation algorithm. My additional twist onto the game was that every pixel is separate which allows for robots to be comprised of multiple parts, taking inspiration from "Noita". </p>
               <img src={projectImage2} className="project-5-image-2" />
             </div>
           </div>
           <div className="project-5-paragraph-3">
             <div className={titleVisible ? "project-5-paragraph-3-on-screen" : "project-5-paragraph-3-off-screen"}>
-              <p>This was a full 2D dungeon crawler that was created in Java, it included many enemy and weapon types, a win/loss system, multiple levels with procedural generations of rooms and layout. It also had a small account system where the player would be able to login and also save their game data and compare their scores against other users on the system.</p>
+              <p>This game genre was Colony RTS, this was created between two other students and we developed the full game with a tech tree, many interlinking resources annd characters that had their own stats that could be trained and had different effectiveness of certain activities.</p>
               <img src={projectImage3} className="project-5-image-3" />
             </div>
           </div>
