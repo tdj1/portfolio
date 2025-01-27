@@ -43,40 +43,41 @@ function Project5() {
   return (
     <div className="app">
       <div className="bg" id="vanta">
-      <div className="buttons-in-project">
+        <div className="buttons-in-project">
           <div className="back-button">
-            <Button className={titleVisible ? "back-button-on-screen" : "back-button-off-screen"} appearance="subtle" onClick={() => navigate("/portfolio/")}>Back to homepage</Button>
+            <Button className={titleVisible ? "back-button-on-screen" : "back-button-off-screen"} appearance="subtle" onClick={() => navigate("/portfolio/project4")}>Previous project</Button>
           </div>
           <div className="next-button">
-            <Button className={titleVisible ? "next-button-on-screen" : "next-button-off-screen"} appearance="subtle" onClick={() => navigate("/portfolio/references")}>Next project</Button>
+            <Button className={titleVisible ? "next-button-on-screen" : "next-button-off-screen"} appearance="subtle" onClick={() => navigate("/portfolio/references")}>References</Button>
           </div>
         </div>
         <div className="project-title">
-        <div className="project-5-title">
-          <div className={titleVisible ? "project-5-on-screen" : "project-5-off-screen"}>
-            <p>Project 5: Game prototypes</p>
+          <div className="project-5-title">
+            <div className={titleVisible ? "project-5-on-screen" : "project-5-off-screen"}>
+              <p>Project 5: Game prototypes</p>
+            </div>
           </div>
         </div>
-        <br></br>
-        <br></br>
         <div className="project-5-paragraph-1">
-            <div className={titleVisible ? "project-5-paragraph-1-on-screen" : "project-5-paragraph-1-off-screen"}>
-              <p>This was a small demo of a game I created with Unity (C#), all the art and animations was made by me, it was inspired by the game "Stardew Valley" and it had basic mechanics including material gathering, a tile set world building tool for creating the world the character interacts with!</p>
-              <img src={projectImage1} className="project-5-image-1" />
-            </div>
+          <div className={titleVisible ? "project-5-paragraph-1-on-screen" : "project-5-paragraph-1-off-screen"}>
+            <p>This was a small demo of a game I created with Unity (C#), all the art and animations was made by me, it was inspired by the game "Stardew Valley" and it had basic mechanics including material gathering, a tile set world building tool for creating the world the character interacts with!</p>
+            <img src={projectImage1} className="project-5-image-1" />
           </div>
-          <div className="project-5-paragraph-2">
-            <div className={titleVisible ? "project-5-paragraph-2-on-screen" : "project-5-paragraph-2-off-screen"}>
-              <p>This was a game based of Robotron: 2084, a classic arcade shoot 'em up, it utilises procedural generation through usage of digging, room and cellular automata algorithms. There's AI pathfinding through A* search for the enemies within the game with LOS through bresenhams line generation algorithm. My additional twist onto the game was that every pixel is separate which allows for robots to be comprised of multiple parts, taking inspiration from "Noita". </p>
-              <img src={projectImage2} className="project-5-image-2" />
-            </div>
+        </div>
+        <div className="project-5-paragraph-2">
+          <div className={titleVisible ? "project-5-paragraph-2-on-screen" : "project-5-paragraph-2-off-screen"}>
+            <p>This was a Processing (Java) game based of Robotron: 2084, a classic arcade shoot 'em up, it utilises procedural generation through usage of digging, room and cellular automata algorithms. There's AI pathfinding through A* search for the enemies within the game with LOS through bresenhams line generation algorithm. My additional twist onto the game was that every pixel is separate which allows for robots to be comprised of multiple parts, taking inspiration from "Noita". </p>
+            <img src={projectImage2} className="project-5-image-2" />
           </div>
-          <div className="project-5-paragraph-3">
-            <div className={titleVisible ? "project-5-paragraph-3-on-screen" : "project-5-paragraph-3-off-screen"}>
-              <p>This game genre was Colony RTS, this was created between two other students and we developed the full game with a tech tree, many interlinking resources annd characters that had their own stats that could be trained and had different effectiveness of certain activities.</p>
-              <img src={projectImage3} className="project-5-image-3" />
-            </div>
+        </div>
+        <div className="project-5-paragraph-3">
+          <div className={titleVisible ? "project-5-paragraph-3-on-screen" : "project-5-paragraph-3-off-screen"}>
+            <p>This game genre was Colony RTS, this was created in Processing (Java) between two other students and we developed the full game with a tech tree, many interlinking resources annd characters that had their own stats that could be trained and had different effectiveness of certain activities.</p>
+            <img src={projectImage3} className="project-5-image-3" />
           </div>
+        </div>
+        <div className="back-to-homepage-button">
+          <Button className={titleVisible ? "back-to-homepage-button-on-screen" : "back-to-homepage-button-off-screen"} appearance="subtle" onClick={() => navigate("/portfolio/")}>Back to homepage</Button>
         </div>
       </div>
     </div>

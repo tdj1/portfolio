@@ -44,9 +44,6 @@ function Project1() {
     <div className="app">
       <div className="bg" id="vanta">
         <div className="buttons-in-project">
-          <div className="back-button">
-            <Button className={titleVisible ? "back-button-on-screen" : "back-button-off-screen"} appearance="subtle" onClick={() => navigate("/portfolio/")}>Back to homepage</Button>
-          </div>
           <div className="next-button">
             <Button className={titleVisible ? "next-button-on-screen" : "next-button-off-screen"} appearance="subtle" onClick={() => navigate("/portfolio/project2")}>Next project</Button>
           </div>
@@ -82,6 +79,9 @@ iterative improvements through a user study.</p>
             <p>The game was programmed in Godot, it's a 3D puzzle-adventure game, it takes large inspiration from games such as "Outer Wilds" and "A Short Hike". The project was developed solely by myself over 6 months, I used agile principles to keep ontop of development and consistently met with stakeholders to ensure the project was inline with their vision. </p>
             <img src={projectImage3} className="project-1-image-3" />
           </div>
+        </div>
+        <div className="back-to-homepage-button">
+          <Button className={titleVisible ? "back-to-homepage-button-on-screen" : "back-to-homepage-button-off-screen"} appearance="subtle" onClick={() => navigate("/portfolio/")}>Back to homepage</Button>
         </div>
       </div>
     </div>

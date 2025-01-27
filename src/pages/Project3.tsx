@@ -45,7 +45,7 @@ function Project3() {
       <div className="bg" id="vanta">
         <div className="buttons-in-project">
           <div className="back-button">
-            <Button className={titleVisible ? "back-button-on-screen" : "back-button-off-screen"} appearance="subtle" onClick={() => navigate("/portfolio/")}>Back to homepage</Button>
+            <Button className={titleVisible ? "back-button-on-screen" : "back-button-off-screen"} appearance="subtle" onClick={() => navigate("/portfolio/project2")}>Previous project</Button>
           </div>
           <div className="next-button">
             <Button className={titleVisible ? "next-button-on-screen" : "next-button-off-screen"} appearance="subtle" onClick={() => navigate("/portfolio/project4")}>Next project</Button>
@@ -70,6 +70,9 @@ function Project3() {
             <img src={projectImage2} className="project-3-image-2" />
             <img src={projectImage3} className="project-3-image-3" />
           </div>
+        </div>
+        <div className="back-to-homepage-button">
+          <Button className={titleVisible ? "back-to-homepage-button-on-screen" : "back-to-homepage-button-off-screen"} appearance="subtle" onClick={() => navigate("/portfolio/")}>Back to homepage</Button>
         </div>
       </div>
     </div>

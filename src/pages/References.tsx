@@ -43,10 +43,7 @@ function References() {
       <div className="bg" id="vanta">
         <div className="buttons-in-project">
           <div className="back-button">
-            <Button className={titleVisible ? "back-button-on-screen" : "back-button-off-screen"} appearance="subtle" onClick={() => navigate("/portfolio/")}>Back to homepage</Button>
-          </div>
-          <div className="restart-button">
-            <Button className={titleVisible ? "restart-button-on-screen" : "restart-button-off-screen"} appearance="subtle" onClick={() => navigate("/portfolio/project1")}>Back to project 1</Button>
+            <Button className={titleVisible ? "back-button-on-screen" : "back-button-off-screen"} appearance="subtle" onClick={() => navigate("/portfolio/project5")}>Previous project</Button>
           </div>
         </div>
         <div className="project-title">
@@ -56,24 +53,45 @@ function References() {
             </div>
           </div>
         </div>
-          <div className="references-paragraph-1">
-            <div className={titleVisible ? "references-paragraph-1-on-screen" : "references-paragraph-1-off-screen"}>
-            </div>
+        <div className="references-paragraph-1">
+          <div className={titleVisible ? "references-paragraph-1-on-screen" : "references-paragraph-1-off-screen"}>
+            <p> "I was impressed with his level of autonomy and ability to do the appropriate research surrounding the appointed tasks"<br></br> - Barney Randall, a Senior Software Engineer at Bright Ascension</p>
           </div>
-          <div className="references-paragraph-2">
-            <div className={titleVisible ? "references-paragraph-2-on-screen" : "references-paragraph-2-off-screen"}>
-            </div>
+        </div>
+        <div className="references-paragraph-2">
+          <div className={titleVisible ? "references-paragraph-2-on-screen" : "references-paragraph-2-off-screen"}>
+            <p> "I firmly believe that Thomas's blend of technical skill, creativity, and exceptional
+communication abilities will make him a valuable asset to any team. He approaches software
+development not just as a task, but as an art, seamlessly balancing user experience with
+technical functionality. His future in this field is undoubtedly bright, and I eagerly anticipate
+seeing the impact they will make in his career."<br></br> - Dr Alistair Fraser, a Director of Neuhealth</p>
           </div>
+        </div>
+        <div className="references-paragraph-3">
+          <div className={titleVisible ? "references-paragraph-2-on-screen" : "references-paragraph-2-off-screen"}>
+            <p> "His work on a machine learning algorithm to forecast passenger growth opportunities has been
+            revolutionary for SYD and reprioritised our thinking about the future business needs."<br></br> - Benjamin Almond, a Commercial Manager at Sydney Airport</p>
+          </div>
+        </div>
         <div className="download-buttons">
-          <a href={pdfFile1} download="Bright Ascension Reference.pdf">
-            <Button appearance="primary">Bright Ascension Reference</Button>
-          </a>
-          <a href={pdfFile2} download="Neuhealth Reference.pdf">
-            <Button appearance="primary">Neuhealth Reference</Button>
-          </a>
-          <a href={pdfFile3} download="Sydney Airport Reference.pdf">
-            <Button appearance="primary">Sydney Airport Reference</Button>
-          </a>
+          <div className="download-1">
+            <a href={pdfFile1} download="Bright Ascension Reference.pdf">
+              <Button appearance="primary">Bright Ascension Reference</Button>
+            </a>
+          </div>
+          <div className="download-2">
+            <a href={pdfFile2} download="Neuhealth Reference.pdf">
+              <Button appearance="primary">Neuhealth Reference</Button>
+            </a>
+          </div>
+          <div className="download-3">
+            <a href={pdfFile3} download="Sydney Airport Reference.pdf">
+              <Button appearance="primary">Sydney Airport Reference</Button>
+            </a>
+          </div>
+        </div>
+        <div className="back-to-homepage-button">
+          <Button className={titleVisible ? "back-to-homepage-button-on-screen" : "back-to-homepage-button-off-screen"} appearance="subtle" onClick={() => navigate("/portfolio/")}>Back to homepage</Button>
         </div>
       </div>
     </div>
