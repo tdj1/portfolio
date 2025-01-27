@@ -57,6 +57,8 @@ function Project5() {
             <p>Project 5: Game prototypes</p>
           </div>
         </div>
+        <br></br>
+        <br></br>
         <div className="project-5-paragraph-1">
             <div className={titleVisible ? "project-5-paragraph-1-on-screen" : "project-5-paragraph-1-off-screen"}>
               <p>This was a small demo of a game I created with Unity (C#), all the art and animations was made by me, it was inspired by the game "Stardew Valley" and it had basic mechanics including material gathering, a tile set world building tool for creating the world the character interacts with!</p>

@@ -27,7 +27,7 @@ function Project2() {
       scaleMobile: 1.00,
       spacing: -9,
       chaos: -5,
-      color: 0xDC143C
+      color: 0x163C6B
     });
 
     // Clean up function
