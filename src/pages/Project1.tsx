@@ -76,7 +76,7 @@ iterative improvements through a user study.</p>
         </div>
         <div className="project-1-paragraph-3">
           <div className={titleVisible ? "project-1-paragraph-3-on-screen" : "project-1-paragraph-3-off-screen"}>
-            <p>The game was programmed in Godot, it's a 3D puzzle-adventure game, it takes large inspiration from games such as "Outer Wilds" and "A Short Hike". The project was developed solely by myself over 6 months, I used agile principles to keep ontop of development and consistently met with stakeholders to ensure the project was inline with their vision. </p>
+            <p>The game was programmed in Godot, it's a 3D puzzle-adventure game, it takes large inspiration from games such as "Outer Wilds" and "A Short Hike". The project was developed solely by myself over 6 months, I used agile principles to keep ontop of development and consistently met with stakeholders to ensure the project was inline with their vision. Play a lite version here! https://tdj1.itch.io/los</p>
             <img src={projectImage3} className="project-1-image-3" />
           </div>
         </div>
